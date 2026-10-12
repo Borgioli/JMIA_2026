@@ -1,5 +1,5 @@
 
-# JMRR_2026
+# JMIA
 
   
 ## Repository Description 
@@ -7,7 +7,7 @@ This repository provides all the code used for the research: **RASRAG: A Domain-
 
 You may find the following documents:
 
-- **JMRR_2026.xlsx**: This file contains the RAS QA benchmark, a subset of our RASRAG for the first textbook (*ras_texbook_sample*), alongside the corresponding benchmark QAs from the textbook (*RAS QA Sample*). It also includes the full table with answers for each model and RAG (from Tables 1 & 2), as well as the surgeon evaluation described in Section 3.3. For this evaluation, four QA sets (Ground Truth, GPT-4o, GPT-5, and RASRAG+Mistral-7B) were shuffled and reviewed by expert raters. For full transparency, we have included the shuffled and blinded QAs provided to the experts, the mapping of the shuffled QAs, and the grades reported in Figure 4 of the paper.
+- **JMIA.xlsx**: This file contains the RAS QA benchmark, a subset of our RASRAG for the first textbook (*ras_texbook_sample*), alongside the corresponding benchmark QAs from the textbook (*RAS QA Sample*). It also includes the full table with answers for each model and RAG (from Tables 1 & 2), as well as the surgeon evaluation described in Section 3.3. For this evaluation, four QA sets (Ground Truth, GPT-4o, GPT-5, and RASRAG+Mistral-7B) were shuffled and reviewed by expert raters. For full transparency, we have included the shuffled and blinded QAs provided to the experts, the mapping of the shuffled QAs, and the grades reported in Figure 4 of the paper.
 
 ![plot](./hist_grades.png)
 
@@ -15,7 +15,7 @@ You may find the following documents:
 
 ![plot](./tab1.png)
 
-- **ras_qa_sample**, **ras_texbook_sample**: Also included in *JMRR_2026.xlsx*, these are subsets of our dataset (specifically covering 3 procedures) made available to support the validity of our work.
+- **ras_qa_sample**, **ras_texbook_sample**: Also included in *JMIA.xlsx*, these are subsets of our dataset (specifically covering 3 procedures) made available to support the validity of our work.
 
 - **tree_creation_book.py**, **RASRAG.py**: The RASRAG code described in Section 1. These scripts were used to generate the evaluation inputs for the RASRAG results in Tables 1 & 2 of the manuscript.
 
@@ -33,8 +33,8 @@ In this section, we provide additional insights into the details of our measurem
 ## Clone Repository
 
 ```
-git clone https://github.com/username/repo-name.git
-cd /repo-name
+git clone https://github.com/Borgioli/JMIA.git
+cd JMIA
 ```
 
 
