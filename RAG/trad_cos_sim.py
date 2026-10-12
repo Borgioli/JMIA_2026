@@ -2,12 +2,12 @@
 # INSTRUCTIONS
 # ============================================
 # This script should be run after running `embedding.py`,
-# which generates the file: `embeddings_sample_jinai_neurips.csv`.
+# which generates the file: `embeddings_sample_jina.csv`.
 #
 # Update the folder paths below if needed, but keep the filenames:
-# 1. "./your_path/embeddings_sample_jinai_neurips.csv" – contains text chunk embeddings
+# 1. "./your_path/embeddings_sample_jina.csv" – contains text chunk embeddings
 # 2. "./your_path/ras_qa_sample.csv" – contains questions to be answered
-# 3. "./your_path/RAG_cos_NeurIPS.csv" – output CSV with generated answers and context
+# 3. "./your_path/RAG_cos_sample.csv" – output CSV with generated answers and context
 # ============================================
 
 import pandas as pd
@@ -19,7 +19,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
 # === Load the CSV with precomputed embeddings ===
-df_embed = pd.read_csv("./your_path/embeddings_sample_jinai_neurips.csv")
+df_embed = pd.read_csv("./your_path/embeddings_sample_jina.csv")
 for col in ['Chunk_Text_embedding']:
     df_embed[col] = df_embed[col].apply(literal_eval).apply(np.array)
 
@@ -95,6 +95,6 @@ for idx, query in enumerate(questions, 1):
         print("❌ Warning: Multiple or no matches found for this question.")
 
     # Save intermediate results
-    df_questions.to_csv('./your_path/RAG_cos_NeurIPS.csv', index=False)
+    df_questions.to_csv('./your_path/RAG_cos_sample.csv', index=False)
 
 print(f"\n🏁 DONE in {time.time() - start_all:.2f}s")

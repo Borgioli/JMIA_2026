@@ -33,8 +33,8 @@ In this section, we provide additional insights into the details of our measurem
 ## Clone Repository
 
 ```
-git clone https://github.com/Borgioli/JMIA.git
-cd JMIA
+git clone https://github.com/Borgioli/JMIA_2026.git
+cd JMIA_2026
 ```
 
 

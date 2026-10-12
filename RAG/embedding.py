@@ -9,7 +9,7 @@ This script encodes text data from a CSV file using a SentenceTransformer model.
 Before running, make sure to update the file paths if needed:
 
 1. Input file: './ras_texbook_sample.csv' 
-2. Output file: './embeddings_sample_jinai_neurips.csv' — will save the resulting embeddings.
+2. Output file: './embeddings_sample_jina.csv' — will save the resulting embeddings.
 
 You can change the model by modifying the `SentenceTransformer(...)` line.
 
@@ -30,4 +30,4 @@ for i, row in tqdm(df.iterrows(), total=len(df)):
     df.at[i, 'Chunk_Text_embedding'] = embeddings.tolist()
 
 # Save to CSV
-df.to_csv("./embeddings_sample_jinai_neurips.csv", index=False)
+df.to_csv("./embeddings_sample_jina.csv", index=False)
